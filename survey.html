@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Survey</title>
+    <link rel="stylesheet" href="survey.css">
+    <style>
+      .form-group {
+        margin-bottom: 20px;
+      }
+      label {
+        margin-right: 10px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Student Satisfaction Survey</h1>
+      </header>
+      <form action="" id="survey-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" name="nameInput" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="number" name="phone" id="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="form-group">
+          <p id="quest">Select your class</p>
+          <select name="class" id="dropdown" required>
+            <option value=""></option>
+            <option value="FE">FE</option>
+            <option value="SE">SE</option>
+            <option value="TE">TE</option>
+            <option value="BE">BE</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p id="quest">How would you rate the courses offered in the college?</p>
+          <label for="excellent">
+            <input type="radio" name="courseRating" id="excellent" value="Excellent">Excellent
+          </label>
+          <label for="very-good">
+            <input type="radio" name="courseRating" id="very-good" value="Very Good">Very Good
+          </label>
+          <label for="good">
+            <input type="radio" name="courseRating" id="good" value="Good">Good
+          </label>
+          <label for="average">
+            <input type="radio" name="courseRating" id="average" value="Average">Average
+          </label>
+          <label for="poor">
+            <input type="radio" name="courseRating" id="poor" value="Poor">Poor
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p id="quest">How well do the teachers teach at the collge?</p>
+          <label for="excellent2">
+            <input type="radio" name="teacherTeaching" id="excellent2" value="Excellent">Excellent
+          </label>
+          <label for="very-good2">
+            <input type="radio" name="teacherTeaching" id="very-good2" value="Very Good">Very Good
+          </label>
+          <label for="good2">
+            <input type="radio" name="teacherTeaching" id="good2" value="Good"></label>
+            <label for="average2">
+            <input type="radio" name="teacherTeaching" id="average2" value="Average">Average
+            </label>
+            <label for="poor2">
+            <input type="radio" name="teacherTeaching" id="poor2" value="Poor">Poor
+            </label>
+            </div>
+            
+            <div class="form-group">
+              <p id="quest">How easy is it to get help from teachers?</p>
+              <label for="excellent3">
+                <input type="radio" name="help" id="excellent3" value="Excellent">Excellent
+              </label>
+              <label for="very-good3">
+                <input type="radio" name="help" id="very-good3" value="Very Good">Very Good
+              </label>
+              <label for="good3">
+                <input type="radio" name="help" id="good3" value="Good">Good
+              </label>
+              <label for="average3">
+                <input type="radio" name="help" id="average3" value="Average">Average
+              </label>
+              <label for="poor3">
+                <input type="radio" name="help" id="poor3" value="Poor">Poor
+              </label>
+            </div>
+        
+            <div class="form-group">
+              <p id="quest">Overall, how satisfied are you with the college?</p>
+              <label for="excellent4">
+                <input type="radio" name="satisfaction" id="excellent4" value="Excellent">Excellent
+              </label>
+              <label for="very-good4">
+                <input type="radio" name="satisfaction" id="very-good4" value="Very Good">Very Good
+              </label>
+              <label for="good4">
+                <input type="radio" name="satisfaction" id="good4" value="Good">Good
+              </label>
+              <label for="average4">
+                <input type="radio" name="satisfaction" id="average4" value="Average">Average
+              </label>
+              <label for="poor4">
+                <input type="radio" name="satisfaction" id="poor4" value="Poor">Poor
+              </label>
+            </div>
+        
+            <div class="form-group">
+              <p id="quest">Would you recommend this college to others?</p>
+              <label for="yes">
+                <input type="radio" name="recommend" id="yes" value="Yes">Yes
+              </label>
+              <label for="no">
+                <input type="radio" name="recommend" id="no" value="No">No
+              </label>
+            </div>
+        
+            <div class="form-group">
+              <p id="quest">Additional Comments</p>
+              <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            </div>
+        
+            <div class="form-group">
+              <button type="submit" id="submit" class="btn">Submit</button>
+            </div>
+          </form>
+        </div>
+        <script src="survey.js"></script>
+      </body>
+      </html>                    
+
+
+
+
+      

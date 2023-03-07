@@ -1,0 +1,141 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  input[type=text],
+  input[type=email],
+  input[type=number],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    outline: none;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  label[for=excellent],
+  label[for=very-good],
+  label[for=good],
+  label[for=average],
+  label[for=poor],
+  label[for=excellent2],
+  label[for=very-good2],
+  label[for=good2],
+  label[for=average2],
+  label[for=poor2],
+  label[for=excellent3],
+  label[for=very-good3],
+  label[for=good3],
+  label[for=average3],
+  label[for=poor3],
+  label[for=excellent4],
+  label[for=very-good4],
+  label[for=good4],
+  label[for=average4],
+  label[for=poor4] {
+    margin-right: 10px;
+    font-weight: normal;
+  }
+  
+  input[type=radio] {
+    margin-right: 5px;
+  }
+  
+  #quest {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+
+  body{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-white);
+    margin: 0;
+}
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(215deg,rgba(75, 113, 179, 0.8),rgba(124, 192, 147, 0.8));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    padding:0.5rem 0.75rem;
+    background: white;
+    color: inherit;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: blue;
+    border: none;
+}
+
+@media (min-width:576px){
+    .container{
+        background-color: palegoldenrod
+    }
+}
+@media (min-width:800px){
+    .container{
+        max-width: 760px;
+    }
+} 
+form{
+    border-radius: 0.25rem;
+}
